@@ -24,17 +24,17 @@ body {
 .right-container {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    margin: 50px;
     gap: 10px;
 }
 
-img {
-    height: 100vh;
-    width: auto;
+#form {
+    display: flex;
+    flex-direction: column;
 }
 
-#error {
-    color: red;
+.inputs {
+    display: flex;
 }
 
 .form-group {
@@ -51,14 +51,32 @@ img {
 .form-group > input {
     border-radius: .25em;
     padding: .25em;
-    width: 1000px;
+    width: 80%;
     /* border: 2px solid red; */
+}
+
+.form-group > input:focus {
+    border-radius: .25em;
+    padding: .25em;
+    width: 80%;
+    border: 2px solid blue;
+    /* border: 2px solid red; */
+}
+
+img {
+    height: 100vh;
+    width: auto;
+}
+
+#error {
+    color: red;
 }
 
 button {
     border-radius: .25em;
     border: 2px solid #00ffd6;
-    padding: .5em;
+    padding: .5em 2em;
+    margin-top: .5em;
     background-color: #00ffd6;
     color: black;
     font-weight: bold;
