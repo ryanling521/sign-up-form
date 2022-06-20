@@ -63,9 +63,20 @@ body {
     /* border: 2px solid red; */
 }
 
-img {
-    height: 100vh;
-    width: auto;
+.img {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background: url(./mario2.png) no-repeat center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+}
+
+.img-description {
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-weight: 900;    
 }
 
 #error {
@@ -87,3 +98,4 @@ button {
     background-color: black;
     color: #00ffd6;
 }
+
